@@ -41,8 +41,40 @@ function main(input) {
   console.log(question)
 
   // 1組の和を順番に足した配列を作成する(累積和)
+  const A = new Array(student.length).fill(0);
+  for (let i = 0; i < student.length; i++) {
+    if (student[i][0] == 1) {
+      if (i === 0) {
+        A[i] = 0 + student[i][1];
+      } else {
+        A[i] = A[i - 1] + student[i][1];
+      }
+    } else {
+      if (i === 0) {
+        A[i] = 0
+      } else {
+        A[i] = A[i - 1];
+      }
+    }
+  }
   // 2組の和を順番に足した配列を作成する(累積和)
-  const A = student.map((v) => { })
+  const B = new Array(student.length).fill(0);
+  for (let i = 0; i < student.length; i++) {
+    if (student[i][0] == 2) {
+      if (i === 0) {
+        B[i] = 0 + student[i][1];
+      } else {
+        B[i] = B[i - 1] + student[i][1];
+      }
+    } else {
+      if (i === 0) {
+        B[i] = 0
+      } else {
+        B[i] = B[i - 1];
+      }
+    }
+  }
+
   return N
 }
 
