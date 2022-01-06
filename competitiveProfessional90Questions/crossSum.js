@@ -75,7 +75,7 @@ function main(input) {
   }
 
   return A.map(v => v.join(' ')).join('\n');
-  //join https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+  //join() https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/join
   //map()で配列のすべての要素を呼び出す
   //map()で呼び出されたすべての要素に空白をつけ文字列を作成
   //map()で作成された新たな配列に対して改行をつけて文字列を作成
