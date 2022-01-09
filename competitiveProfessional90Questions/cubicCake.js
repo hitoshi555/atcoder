@@ -16,8 +16,17 @@ x
 
 */
 
-'use strict';
+'use strict'
 
-function main(input) { }
+function main(input) {
+  const [a, b, c] = input.trim().split(' ').map(BigInt);
+  const f = (m, n) => n ? f(n, m % n) : m;
+  let l = f(a, b);
+  l = f(l, c);
+  const aCount = a / l;
+  const bCount = b / l;
+  const cCount = c / l;
+  console.log(String(aCount + bCount + cCount - BigInt(3)));
+}
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
