@@ -13,13 +13,14 @@ https://atcoder.jp/contests/typical90/tasks/typical90_v
 自力で解けたか？
 x
 以下のユーザーが提出したコードを見た。
-
+https://atcoder.jp/contests/typical90/submissions/28344911
 */
 
 'use strict'
 
 function main(input) {
   const [a, b, c] = input.trim().split(' ').map(BigInt);
+  //Bigint https://qiita.com/okumurakengo/items/a5cf08e764b6dfd7bf85
   const f = (m, n) => n ? f(n, m % n) : m;
   let l = f(a, b);
   l = f(l, c);
@@ -30,3 +31,5 @@ function main(input) {
 }
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
+//最大公約数 https://mebee.info/2021/04/26/post-26097/
+// https://tech-blog.s-yoshiki.com/entry/63
