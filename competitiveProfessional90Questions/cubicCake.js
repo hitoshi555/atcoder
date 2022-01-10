@@ -18,18 +18,30 @@ https://atcoder.jp/contests/typical90/submissions/28344911
 
 'use strict'
 
-function main(input) {
-  const [a, b, c] = input.trim().split(' ').map(BigInt);
-  //Bigint https://qiita.com/okumurakengo/items/a5cf08e764b6dfd7bf85
-  const f = (m, n) => n ? f(n, m % n) : m;
-  let l = f(a, b);
-  l = f(l, c);
-  const aCount = a / l;
-  const bCount = b / l;
-  const cCount = c / l;
-  console.log(String(aCount + bCount + cCount - BigInt(3)));
+function gcd(...args) {
+  var f = (a, b) => (b ? f(b, a % b) : a);
+  var ans = args[0];
+  for (var i = 1; i < args.length; i++) {
+    ans = f(ans, args[i]);
+  }
+  return ans;
 }
 
-main(require("fs").readFileSync("/dev/stdin", "utf8"));
+function Main(input) {
+  input = input.split(" ");
+  let A = BigInt(input[0]);
+  //Bigint https://qiita.com/okumurakengo/items/a5cf08e764b6dfd7bf85
+  let B = BigInt(input[1]);
+  let C = BigInt(input[2]);
+
+  let d = gcd(A, B, C);
+  let ans = A / d + B / d + C / d - BigInt(3);
+
+  console.log(String(ans));
+}
+
+Main(require("fs").readFileSync("/dev/stdin", "utf8"));
+
 //最大公約数 https://mebee.info/2021/04/26/post-26097/
 // https://tech-blog.s-yoshiki.com/entry/63
+//最大公約数の説明 https://qiita.com/drken/items/0c88a37eec520f82b788
