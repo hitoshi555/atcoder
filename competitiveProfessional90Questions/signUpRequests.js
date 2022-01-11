@@ -15,30 +15,31 @@ mapを使いこなすと計算量を下げることができる
 自力で解けたか？
 x
 以下のユーザーが提出したコードを見た。
-
+https://atcoder.jp/contests/typical90/submissions/27474415
 */
 
 'use strict';
 
-function main(input) {
-  const args = input.split('\n');
-  const num = args.shift();
-  const user = args;
-  const registered = []
-  const answer = []
-  user.forEach((element, index) => {
-    if (registered.length === 0) {
-      registered.push(element);
-      answer.push(index + 1);
-      return
-    } else if (!registered.includes(element)) {
-      registered.push(element);
-      answer.push(index + 1);
-      return
+const main = arg => {
+  const input = arg.trim().split("\n");
+  //trim()で前後の空白を削除し、改行ごとに文字列の配列にする
+  const n = parseInt(input[0])
+  //先頭の数を取る
+  const map = {}
+  //キーが数字以外もできるため計算量の削減になる
+  const result = []
+  for (let i = 1; i <= n; i++) {
+    if (map[input[i]]) {
+      continue
+      //mapにキーが存在していたら次の繰り返し処理を行う
+    } else {
+      map[input[i]] = 1
+      result.push(i)
+      //mapにキーが存在していなかったら要素が1を追加する
+      //1はifではtrueであるため
+      //配列に答えを追加する
     }
-  });
-
-  console.log(answer.join('\n'));
+  }
+  console.log(result.join('\n'))
 }
-
-main(require("fs").readFileSync("/dev/stdin", "utf8"));
+main(require('fs').readFileSync('/dev/stdin', 'utf8'));
