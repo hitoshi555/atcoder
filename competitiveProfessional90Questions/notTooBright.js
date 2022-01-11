@@ -7,7 +7,7 @@ https://atcoder.jp/contests/typical90/tasks/typical90_ag
 解説見た後
 
 自力で解けたか？
-
+x
 以下のユーザーが提出したコードを見た。
 
 */
