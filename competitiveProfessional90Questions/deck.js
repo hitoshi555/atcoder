@@ -15,7 +15,7 @@ tによる条件式を作る
 自力で解けたか？
 o
 以下のユーザーが提出したコードを見た。
-
+https://atcoder.jp/contests/typical90/submissions/24466892
 */
 
 'use strict';
@@ -23,6 +23,8 @@ o
 function main(input) {
   const args = input.trim().split('\n');
   const Q = args.shift();
+  //for文でQを使う
+  //for文の中でif文を使いanserに追加する.
   const array = args.map(v => v.split(' ').map(Number));
   const deck = [];
   const answer = [];
