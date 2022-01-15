@@ -10,6 +10,7 @@ https://atcoder.jp/contests/typical90/tasks/typical90_bo
 x
 以下のユーザーが提出したコードを見た。
 https://atcoder.jp/contests/typical90/submissions/24475797
+https://atcoder.jp/contests/typical90/submissions/28432142
 */
 
 'use strict';
