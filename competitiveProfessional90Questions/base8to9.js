@@ -13,6 +13,10 @@ https://atcoder.jp/contests/typical90/submissions/24475797
 https://atcoder.jp/contests/typical90/submissions/28432142
 */
 
+
+//x進数 -> y進数に直すためには
+//x進数 -> 10進数 -> y進数をたどるため
+//fromNで10進数に直している.
 const input = require('fs').readFileSync('/dev/stdin', 'utf8')
 const lines = input.split('\n')
 let [N, K] = lines[0].split(' ')
@@ -21,6 +25,7 @@ K = Number(K)
 const fromN = (S, N) => {
   let v = 0n
   for (let i = 0; i < S.length; i++) {
+    //S.length 文字の長さ
     v += BigInt(S[i]) * BigInt(N) ** BigInt((S.length - i - 1))
   }
   return v
