@@ -1,5 +1,6 @@
 /*
 問題
+https://atcoder.jp/contests/abs/tasks/abc087_b
 
 回答手順
 

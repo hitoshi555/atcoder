@@ -40,7 +40,8 @@ https://atcoder.jp/contests/abs/submissions/8111956
 メモリ : 11468KB
 実行時間 : 97ms
 
-
+線形探索を極める！ 〜 for 文で色んなことができることを知る 〜
+https://qiita.com/drken/items/fdae15f6e9ede543b97a
 */
 
 'use strict';
