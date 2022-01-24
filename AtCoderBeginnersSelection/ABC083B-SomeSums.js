@@ -1,10 +1,14 @@
 /*
 問題
+https://atcoder.jp/contests/abs/tasks/abc083_b
 
 回答手順
+for文回して
+各桁を足す
+条件に合う数値を一時保有する
+答えに足して行く
 
 解説見た後
-https://atcoder.jp/contests/abs/tasks/abc083_b
 
 自力で解けたか？
 
@@ -38,6 +42,7 @@ https://atcoder.jp/contests/abs/tasks/abc083_b
 
 'use strict';
 
-function main(input) { }
+function main(input) {
+}
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
