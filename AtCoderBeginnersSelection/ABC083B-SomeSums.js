@@ -42,21 +42,38 @@ https://qiita.com/drken/items/fd4e5e3630d0f5859067#5-%E9%81%8E%E5%8E%BB%E5%95%8F
 メモリ : 7372KB
 実行時間 : 52ms
 
-
+parseIntしないと小数点が発生しうまくACにならなかった
 */
 
 'use strict';
+
+function findSumOfDigits(n) {
+  let num = 0;
+  while (n > 0) {
+    num += n % 10;
+    num = parseInt(num)
+    n /= 10;
+    n = parseInt(n)
+  }
+
+  return num;
+}
 
 function main(input) {
   const tmp = input.trim().split(" ").map(Number);
   const N = tmp[0];
   const A = tmp[1];
   const B = tmp[2];
-
-  while (true) {
-
+  let total = 0;
+  for (let i = 0; i <= N; i++) {
+    let sum = findSumOfDigits(i);
+    sum = parseInt(sum)
+    if (sum >= A && sum <= B) {
+      total += i;
+    }
   }
 
+  console.log(total)
 }
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
