@@ -1,6 +1,6 @@
 /*
 問題
-
+https://atcoder.jp/contests/abs/tasks/abc088_b
 回答手順
 
 解説見た後
