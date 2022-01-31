@@ -17,27 +17,27 @@ x
 https://qiita.com/drken/items/fd4e5e3630d0f5859067#%E7%AC%AC-6-%E5%95%8F--abc-088-b---card-game-for-two-200-%E7%82%B9
 
 自分が書いたコード
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+コード長 : 454Byte
+メモリ : 30708KB
+実行時間 : 245ms
 
 1.メモリが小さい
-
-コード長 : Byte
-メモリ : KG
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/2325645
+コード長 : 560Byte
+メモリ : 7372KG
+実行時間 : 55ms
 
 2.実行時間が一番短い
-
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/13983952
+コード長 : 559Byte
+メモリ : 29484KB
+実行時間 : 44ms
 
 3.コード長が一番短い
-
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/6231560
+コード長 : 159Byte
+メモリ : 7500KB
+実行時間 : 53ms
 
 
 forEach使えばよかったかな？？
