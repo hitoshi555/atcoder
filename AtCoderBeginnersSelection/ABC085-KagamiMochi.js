@@ -10,7 +10,7 @@ https://atcoder.jp/contests/abs/tasks/abc085_b
 https://qiita.com/drken/items/fd4e5e3630d0f5859067#%E7%AC%AC-7-%E5%95%8F--abc-085-b---kagami-mochi-200-%E7%82%B9
 
 自力で解けたか？
-
+o
 以下のユーザーが提出したコードを見た。
 
 自分が書いたコード
