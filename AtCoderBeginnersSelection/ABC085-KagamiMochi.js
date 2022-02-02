@@ -14,27 +14,28 @@ https://qiita.com/drken/items/fd4e5e3630d0f5859067#%E7%AC%AC-7-%E5%95%8F--abc-08
 以下のユーザーが提出したコードを見た。
 
 自分が書いたコード
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+コード長 : 324Byte
+メモリ : 29396KB
+実行時間 : 56ms
 
 1.メモリが小さい
-
-コード長 : Byte
-メモリ : KG
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/2225249
+コード長 : 233Byte
+メモリ : 7372KG
+実行時間 : 54ms
+Set().sizeで重複する数の除去と個数を受け取っている
 
 2.実行時間が一番短い
-
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/12193107
+コード長 : 267Byte
+メモリ : 29508KB
+実行時間 : 44ms
 
 3.コード長が一番短い
-
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/21574010
+コード長 : 100Byte
+メモリ : 29612KB
+実行時間 : 56ms
 
 
 */
@@ -43,7 +44,9 @@ https://qiita.com/drken/items/fd4e5e3630d0f5859067#%E7%AC%AC-7-%E5%95%8F--abc-08
 
 function main(input) {
   const tmp = input.trim().split("\n").map(Number);
-  const N = tmp.shift();
+  //const N = tmp.shift();
+  //Nは使っていないためshiftだけでよい
+  tmp.shift();
   const A = tmp.sort(function (a, b) {
     return b - a;
   });
