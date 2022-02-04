@@ -19,10 +19,10 @@ https://qiita.com/drken/items/fd4e5e3630d0f5859067#%E7%AC%AC-9-%E5%95%8F--abc-04
 実行時間 : ms
 
 1.メモリが小さい
-
-コード長 : Byte
-メモリ : KG
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/2907237
+コード長 : 418Byte
+メモリ : 7372KG
+実行時間 : 52ms
 
 2.実行時間が一番短い
 
