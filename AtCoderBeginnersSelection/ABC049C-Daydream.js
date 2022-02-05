@@ -25,16 +25,16 @@ https://atcoder.jp/contests/abs/submissions/2907237
 実行時間 : 52ms
 
 2.実行時間が一番短い
-
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/12869884
+コード長 : 278Byte
+メモリ : 29852KB
+実行時間 : 45ms
 
 3.コード長が一番短い
-
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/4118255
+コード長 : 124Byte
+メモリ : 9420KB
+実行時間 : 55ms
 
 【キーポイント】
 ・Greedy アルゴリズム
@@ -42,8 +42,16 @@ https://atcoder.jp/contests/abs/submissions/2907237
 ・後ろから解く
 */
 
-'use strict';
+"use strict";
 
-function main(input) { }
+function Main(input) {
+  // 1行目がinput[0], 2行目がinput[1], …に入る
+  var input = input.trim();
+  // 入力値を受け取る
+  console.log(/^(dream|dreamer|eraser|erase)+$/.test(input) ? "YES" : "NO");
+  // test() https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
+  // 正規表現と指定された文字列の一致を調べる
+  // true or falseを返している。
+}
 
-main(require("fs").readFileSync("/dev/stdin", "utf8"));
+Main(require("fs").readFileSync("/dev/stdin", "utf8"));
