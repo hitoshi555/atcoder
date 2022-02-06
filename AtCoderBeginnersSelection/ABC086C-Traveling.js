@@ -7,8 +7,10 @@ https://atcoder.jp/contests/abs/tasks/arc089_a
 解説見た後
 
 自力で解けたか？
+x
 
 以下のユーザーが提出したコードを見た。
+https://qiita.com/drken/items/fd4e5e3630d0f5859067#%E7%AC%AC-10-%E5%95%8F--abc-086-c---traveling-300-%E7%82%B9
 
 自分が書いたコード
 コード長 : Byte
@@ -33,7 +35,8 @@ https://atcoder.jp/contests/abs/tasks/arc089_a
 メモリ : KB
 実行時間 : ms
 
-
+【キーポイント】
+・パリティ
 */
 
 "use strict";
