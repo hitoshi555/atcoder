@@ -36,11 +36,11 @@ https://qiita.com/drken/items/fd4e5e3630d0f5859067#%E7%AC%AC-10-%E5%95%8F--abc-0
 実行時間 : ms
 
 【キーポイント】
-・パリティ
+・パリティ 「偶数」と「奇数」に関する性質
 */
 
 "use strict";
 
-function main(input) {}
+function main(input) { }
 
 main(require("fs").readFileSync("/dev/stdin", "utf8"));
