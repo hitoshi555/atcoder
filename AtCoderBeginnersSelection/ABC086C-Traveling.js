@@ -20,10 +20,10 @@ https://atcoder.jp/contests/abs/submissions/2212945
 実行時間 : ms
 
 1.メモリが小さい
-
-コード長 : Byte
-メモリ : KG
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/5333043
+コード長 : 909Byte
+メモリ : 15404KG
+実行時間 : 158ms
 
 2.実行時間が一番短い
 https://atcoder.jp/contests/abs/submissions/2212945
@@ -32,10 +32,10 @@ https://atcoder.jp/contests/abs/submissions/2212945
 実行時間 : 97ms
 
 3.コード長が一番短い
-
-コード長 : Byte
-メモリ : KB
-実行時間 : ms
+https://atcoder.jp/contests/abs/submissions/11318216
+コード長 : 210Byte
+メモリ : 50684KB
+実行時間 : 700ms
 
 【キーポイント】
 ・パリティ 「偶数」と「奇数」に関する性質
