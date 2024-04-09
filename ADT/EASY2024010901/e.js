@@ -1,0 +1,1 @@
+// https://atcoder.jp/contests/adt_easy_20240109_1/tasks/abc323_c
